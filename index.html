@@ -1,0 +1,265 @@
+<!doctype html>
+<html class="no-js" lang="eng">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bathroom Schedule</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Ranchers&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/stylesheet.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+<header>Jonathan's Bathroom Schedule</header>
+<div class="container-fluid main-container">
+  <div class="row titles">
+    <div class="col-md-3">
+      time
+    </div>
+    <div class="col-md-2">
+      set timer
+    </div>
+    <div class="col-md-3">
+      stars earned<br>
+      <p>(1 = Poorly 5=Super Job)</p>
+    </div>
+    <div class="col-md-4">
+      comments
+    </div>
+  </div>
+<!-- TIME CHART SECTION  -->
+  <div class="row time-rows">
+    <div class="col-md-3 sch-time-col sch-time-col-with-list">
+      <h4>7 AM</h4>
+      <h5>Special Tasks</h5>
+      <ul>
+        <li>Change pullup</li>
+        <li>Sit on potty for 5mins</li>
+        <li>Brush teeth</li>
+      </ul>
+    </div>
+    <div class="col-md-2 timer-amount-col">
+      <p>25 Mins</p>
+    </div>
+    <div class="col-md-3 star-col">
+      <!-- <p>stars<br>(1 = Poorly 5=Super Job)</p>-->
+      <button id="minus" onclick="removeimage()"><i class="fa fa-minus"></i></button>
+      <button id="plus" onclick="addimage()"><i class="fa fa-plus" aria-hidden="true"></i></button>
+      <div id="star-container-1"></div>
+    </div>
+    <div class="col-md-4 comments-col">
+      <textarea rows="4" cols="30" name="comment" placeholder="Comments here..."></textarea>
+    </div>
+  </div>
+  <div class="row time-rows">
+    <div class="col-md-3 sch-time-col">
+      <h4>10 AM</h4>
+    </div>
+    <div class="col-md-2 timer-amount-col">
+      5 Mins
+    </div>
+    <div class="col-md-3 star-col">
+      <div id="star-container"><img src="img/rainbow-star-2.png" width="50" height="50" /></div>
+      <div class="star-selection">
+        <form>
+          <input type="radio" id="1" name="starsEarned" value="1">
+          <label for="1">1</label>
+
+          <input type="radio" id="2" name="starsEarned" value="2">
+          <label for="2">2</label>
+
+          <input type="radio" id="3" name="starsEarned" value="3">
+          <label for="3">3</label>
+
+          <input type="radio" id="4" name="starsEarned" value="4">
+          <label for="4">4</label>
+
+          <input type="radio" id="5" name="starsEarned" value="5">
+          <label for="5">5</label>
+        </form>
+
+      </div>
+    </div>
+    <div class="col-md-4 comments-col">
+      <textarea rows="4" cols="30" name="comment" placeholder="Comments here..."></textarea>
+    </div>
+  </div>
+  <div class="row time-rows">
+    <div class="col-md-3 sch-time-col">
+      <h4>11:30 AM - 12 PM</h4>
+    </div>
+    <div class="col-md-2 timer-amount-col">
+      5 Mins
+    </div>
+    <div class="col-md-3 star-col">
+      <div id="star-container"><img src="img/rainbow-star-2.png" width="50" height="50" /></div>
+      <div class="star-selection">
+        <form>
+          <input type="radio" id="1" name="starsEarned" value="1">
+          <label for="1">1</label>
+
+          <input type="radio" id="2" name="starsEarned" value="2">
+          <label for="2">2</label>
+
+          <input type="radio" id="3" name="starsEarned" value="3">
+          <label for="3">3</label>
+
+          <input type="radio" id="4" name="starsEarned" value="4">
+          <label for="4">4</label>
+
+          <input type="radio" id="5" name="starsEarned" value="5">
+          <label for="5">5</label>
+        </form>
+
+      </div>
+    </div>
+    <div class="col-md-4 comments-col">
+      <textarea rows="4" cols="30" name="comment" placeholder="Comments here..."></textarea>
+    </div>
+  </div>
+  <div class="row time-rows">
+    <div class="col-md-3 sch-time-col">
+      <h4>3 PM</h4>
+    </div>
+    <div class="col-md-2 timer-amount-col">
+      5 Mins
+    </div>
+    <div class="col-md-3 star-col">
+      <div id="star-container"><img src="img/rainbow-star-2.png" width="50" height="50" /></div>
+      <div class="star-selection">
+        <form>
+          <input type="radio" id="1" name="starsEarned" value="1">
+          <label for="1">1</label>
+
+          <input type="radio" id="2" name="starsEarned" value="2">
+          <label for="2">2</label>
+
+          <input type="radio" id="3" name="starsEarned" value="3">
+          <label for="3">3</label>
+
+          <input type="radio" id="4" name="starsEarned" value="4">
+          <label for="4">4</label>
+
+          <input type="radio" id="5" name="starsEarned" value="5">
+          <label for="5">5</label>
+        </form>
+
+      </div>
+    </div>
+    <div class="col-md-4 comments-col">
+      <textarea rows="4" cols="30" name="comment" placeholder="Comments here..."></textarea>
+    </div>
+  </div>
+  <div class="row time-rows">
+    <div class="col-md-3 sch-time-col">
+      <h4>6 AM</h4>
+    </div>
+    <div class="col-md-2 timer-amount-col">
+      5 Mins
+    </div>
+    <div class="col-md-3 star-col">
+      <div id="star-container"><img src="img/rainbow-star-2.png" width="50" height="50" /></div>
+      <div class="star-selection">
+        <form>
+          <input type="radio" id="1" name="starsEarned" value="1">
+          <label for="1">1</label>
+
+          <input type="radio" id="2" name="starsEarned" value="2">
+          <label for="2">2</label>
+
+          <input type="radio" id="3" name="starsEarned" value="3">
+          <label for="3">3</label>
+
+          <input type="radio" id="4" name="starsEarned" value="4">
+          <label for="4">4</label>
+
+          <input type="radio" id="5" name="starsEarned" value="5">
+          <label for="5">5</label>
+        </form>
+
+      </div>
+    </div>
+    <div class="col-md-4 comments-col">
+      <textarea rows="4" cols="30" name="comment" placeholder="Comments here..."></textarea>
+    </div>
+  </div>
+  <div class="row time-rows last-time-row">
+    <div class="col-md-3 sch-time-col">
+      <h4>8 PM - 8:50PM</h4>
+      <h5>Special Tasks</h5>
+      <ul>
+        <li>Change pullup</li>
+        <li>Sit on potty for 5mins</li>
+        <li>Brush teeth</li>
+        <li>Bedtime at 9pm</li>
+      </ul>
+    </div>
+    <div class="col-md-2 timer-amount-col">
+      <p>15 Mins - 50 Mins</p>
+      <p style="font-weight: 600; font-size:15px;">(If Jonathan takes a bath it will be for 20-30mins)</p>
+    </div>
+    <div class="col-md-3 star-col">
+      <div id="star-container"><img src="img/rainbow-star-2.png" width="50" height="50" /></div>
+      <div class="star-selection">
+        <form>
+          <input type="radio" id="1" name="starsEarned" value="1">
+          <label for="1">1</label>
+
+          <input type="radio" id="2" name="starsEarned" value="2">
+          <label for="2">2</label>
+
+          <input type="radio" id="3" name="starsEarned" value="3">
+          <label for="3">3</label>
+
+          <input type="radio" id="4" name="starsEarned" value="4">
+          <label for="4">4</label>
+
+          <input type="radio" id="5" name="starsEarned" value="5">
+          <label for="5">5</label>
+        </form>
+
+      </div>
+    </div>
+    <div class="col-md-4 comments-col">
+      <textarea rows="4" cols="30" name="comment" placeholder="Comments here..."></textarea>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <script src="js/stars2.js"></script>
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

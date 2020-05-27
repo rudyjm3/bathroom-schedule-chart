@@ -1,0 +1,134 @@
+body {
+  background: #ffcf4d;
+  /*background-image: url("https://lh3.googleusercontent.com/proxy/XCH4Benjplw4gV6bWD6Y9-GI9mLIiHpVNYXUpLN-BFnvrKi0iqNotKWypDl7J38mP17YszZg9ryTc5QLnE4DnrPsfhR3bi9m0VNGjin7Bv1WDFih_VtCamKynce-RHPlpMQhwgnKWCaHhAZVhjAarG1KCwkSrcRZ0HEoFGNAOBxaJsGLd1FdKZpPPfBUqs5xetUIouU-HCTdy7lCAz4");*/
+  background-image: url("https://i.pinimg.com/originals/a1/c7/41/a1c7417a8ff278b85e571707c27768ba.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+}
+header {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 25px;
+  font-weight: 700;
+  color: red;
+  margin: 0 auto;
+  padding: 10px 0 10px 0;
+  width: 26%;
+  text-align: center;
+  margin-top: 50px;
+  border-radius: 4px;
+  border: 1px solid grey;
+  background: rgb(242,185,27);
+background: linear-gradient(180deg, rgba(242,185,27,1) 0%, rgba(246,219,143,1) 50%, rgba(230,168,0,1) 77%);
+}
+.main-container {
+  margin: auto;
+  padding: 0 50px;
+  margin-bottom: 50px;
+  border-radius: 14px;
+}
+.titles {
+  margin-top: 35px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 19px;
+  background: #e6e6e6;
+  padding: 20px 0 20px 0;
+  color: red;
+  text-transform: capitalize;
+  border-bottom: 1px solid blue;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.titles p {
+  font-size: 14px;
+  color: black;
+}
+.time-rows {
+  text-align: center;
+  background: #f2f2f2;
+  padding: 20px 0 20px 0;
+  text-transform: capitalize;
+  border-bottom: 2px solid #333;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.last-time-row {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.sch-time-col .timer-amount-col .star-col .comments-col {
+  padding: 25px 0 0 0;
+}
+ul {
+  text-align: left;
+  list-style-type: none;
+  background: #ff3030;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 0 0 0 10px;
+  color: #f9f9f9;
+  font-weight: bold;
+}
+.sch-time-col {
+  margin: auto;
+}
+.timer-amount-col {
+  font-size: 18px;
+  font-weight: 600;
+  margin: auto;
+}
+.star-col {
+  margin: auto;
+  font-weight: 600;
+}
+.comments-col {
+  margin: auto;
+}
+/* =========== START MINUS AND PLUS BUTTONS TO ADD STARS ======== */
+#minus {
+  background: red;
+  color: white;
+  padding: 10px 40px;
+  font-weight: 900;
+  font-size: 30px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#minus:hover {
+  background: #ff4a4a;
+}
+#plus {
+  background: green;
+  color: white;
+  padding: 10px 40px;
+  font-weight: 900;
+  font-size: 30px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#plus:hover {
+  background: #24d453;
+}
+/* =========== ENDS MINUS AND PLUS BUTTONS TO ADD STARS ======== */
+#star-container-1 {
+  margin-top: 10px;
+}
+#star-container {
+  margin-bottom: 10px;
+}
+.star-selection {
+  padding: 15px 0 10px 0;
+  background: #c4dbff;
+  border-radius: 4px;
+  border: 1px solid grey;
+}
+.star-selection label {
+  margin-right: 5px;
+  color: grey;
+}
