@@ -42,7 +42,7 @@ background: linear-gradient(180deg, rgba(242,185,27,1) 0%, rgba(246,219,143,1) 5
   border-top-right-radius: 5px;
 }
 .titles p {
-  font-size: 14px;
+  font-size: 13px;
   color: black;
 }
 .time-rows {
@@ -75,7 +75,7 @@ ul {
   margin: auto;
 }
 .timer-amount-col {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   margin: auto;
 }
