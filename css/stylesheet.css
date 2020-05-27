@@ -83,6 +83,11 @@ ul {
   margin: auto;
   font-weight: 600;
 }
+.star-col p {
+  color: grey;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
 .comments-col {
   margin: auto;
 }
@@ -115,13 +120,13 @@ ul {
 #plus:hover {
   background: #24d453;
 }
-/* =========== ENDS MINUS AND PLUS BUTTONS TO ADD STARS ======== */
-#star-container-1 {
+/* =========== END MINUS AND PLUS BUTTONS TO ADD STARS ======== */
+#star-container-1, #star-container-2, #star-container-3, #star-container-4, #star-container-5, #star-container-6 {
   margin-top: 10px;
 }
-#star-container {
+/*#star-container {
   margin-bottom: 10px;
-}
+}*/
 .star-selection {
   padding: 15px 0 10px 0;
   background: #c4dbff;
